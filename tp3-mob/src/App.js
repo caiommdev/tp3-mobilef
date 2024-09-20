@@ -4,6 +4,7 @@ import TextoEstilizado from './TextoEstilizado';
 import Header from './Header';
 import Footer from './Footer';
 import './styles.css';
+import Main from './Main';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
       <Header/>
       <h1>Meu App</h1>
       <Card title="Título" content="Conteúdo" />
+      <Main/>
       <TextoEstilizado />
       <Footer/>
     </div>

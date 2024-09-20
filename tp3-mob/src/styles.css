@@ -1,65 +1,109 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  min-width: 100vw;
+}
+
+.footer {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;
+  min-width: 100vw;
+}
+
+.main-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.main-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    flex-direction: row;
+    justify-content: space-between;
   }
-  
-  .app {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+
+  .main-content h1 {
+    font-size: 52px;
   }
-  
-  .header {
-    background-color: #007bff;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    min-width: 100vw;
+
+  .main-content p {
+    font-size: 28px;
   }
-  
-  .footer {
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    margin-top: auto;
-    min-width: 100vw;
+
+  .main-image {
+    width: 50%;
   }
-  
-  main {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+}
+
+@media (min-width: 1200px) {
+  .header, .footer {
+    padding: 30px;
   }
-  
-  h1 {
-    font-size: 20px;
+
+  .main-content h1 {
+    font-size: 60px;
   }
-  
-  p {
-    font-size: 16px;
+
+  .main-content p {
+    font-size: 30px;
   }
-  
-  @media (min-width: 576px) {
-    h1 {
-      font-size: 54px;
-    }
-  
-    .footer p {
-      font-size: 48px;
-    }
-  
-    main p {
-      font-size: 48px;
-    }
+
+  .main-image {
+    width: 40%;
   }
-  
+}
